@@ -14,7 +14,7 @@ var longDistanceUnit = 'mi' // 'mi' for miles, 'km' for kilometres
 function convertUnit(element, factor, newUnit, decimalPlaces)
 {
   var textNode = element.childNodes[0]
-  var oldValue = parseFloat(textNode.textContent)
+  var oldValue = parseFloat(textNode.textContent.replace(',',''))
   var newValue = oldValue * factor
   textNode.textContent = newValue.toFixed(decimalPlaces || 0)
   var unitNode = element.getElementsByClassName('unit')[0]

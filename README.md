@@ -1,4 +1,4 @@
-strava-unit-changer
+Strava unit changer
 ===================
 
 This is a Greasemonkey script to change the units in Strava.
